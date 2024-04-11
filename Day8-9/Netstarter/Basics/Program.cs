@@ -9,11 +9,11 @@ Student s6 = new();
 s1.name = "Bishnu";
 s1.address= "Ktm";
 s1.roll = 23;
-s1.dob = new DateTime(1990,12,12);
+s1.dob = new DateTime(1990, 12, 12);
 
 
 
-Console.WriteLine($"{s1.name} {s1.address} {s1.roll} {s1.dob}");
+
 
 s1.PrintDetails();
 

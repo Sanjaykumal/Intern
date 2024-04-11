@@ -8,7 +8,7 @@ class Student
    
     public void PrintDetails()
     {
-Console.Writeline($"{name} {address} {roll} {dob}");
+Console.WriteLine($"{name} {address} {roll} {dob}");
 
     }
 }
