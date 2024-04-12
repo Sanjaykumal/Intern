@@ -26,14 +26,29 @@
 
 
 
-Animal a1 = new();
+//Animal a1 = new();
 
 
 
-a1.genus = "Oryctolagus";
-a1.species = "caniculus";
-a1.lifespan = 12;
-a1.height = 50;
-a1.habitat = "Terrestial";
+//a1.genus = "Oryctolagus";
+//a1.species = "caniculus";
+//a1.lifespan = 12;
+//a1.height = 50;
+//a1.habitat = "Terrestial";
 
-a1.PrintDetails();
+//a1.PrintDetails();
+
+Rectangle rectangle = new Rectangle(5, 7);
+
+double area = rectangle.CalculateArea();
+    double perimeter = rectangle.CalculatePerimeter();
+
+ Console.WriteLine("Area of the rectangle: " + area);
+        Console.WriteLine("Perimeter of the rectangle: " + perimeter);
+
+
+
+
+//var c1 = new circle(7);
+//var x = c1.GetArea();
+//var y = c1.GetPerimeter();
