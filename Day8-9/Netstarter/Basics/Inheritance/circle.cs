@@ -1,11 +1,19 @@
 class Circle
 {
- public Circle (double r)
- {
-    radius = r;
- }
- double radius;
+    public double Radius { get; set; }
 
- public double GetArea=>Math.PI*r*r;
- public double GetPerimeter=>2*Math.PI*radius;
+    public Circle(double radius)
+    {
+        Radius = radius;
+    }
+
+    public double CalculateArea()
+    {
+        return Math.PI * Math.Pow(Radius, 2);
+    }
+
+    public double CalculatePerimeter()
+    {
+        return 2 * Math.PI * Radius;
+    }
 }

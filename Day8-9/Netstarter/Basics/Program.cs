@@ -47,8 +47,23 @@ double area = rectangle.CalculateArea();
         Console.WriteLine("Perimeter of the rectangle: " + perimeter);
 
 
+ Square square = new Square(5);
+        double squareArea = square.CalculateArea();
+        double squarePerimeter = square.CalculatePerimeter();
+        Console.WriteLine("Area of the square: " + squareArea);
+        Console.WriteLine("Perimeter of the square: " + squarePerimeter);
 
 
-//var c1 = new circle(7);
-//var x = c1.GetArea();
-//var y = c1.GetPerimeter();
+
+Circle circle = new Circle(10);
+        double circleArea = circle.CalculateArea();
+        double circlePerimeter = circle.CalculatePerimeter();
+        Console.WriteLine("Area of the circle: " + circleArea);
+        Console.WriteLine("Perimeter of the circle (circumference): " + circlePerimeter);
+    
+
+    Triangle triangle = new Triangle(3, 4, 5);
+    double triangleArea = triangle.CalculateArea();
+        double trianglePerimeter = triangle.CalculatePerimeter();
+          Console.WriteLine("Area of the triangle: " + triangleArea);
+        Console.WriteLine("Perimeter of the triangle: " + trianglePerimeter);
