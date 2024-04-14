@@ -38,37 +38,26 @@
 
 //a1.PrintDetails();
 
-Rectangle rectangle = new Rectangle(5, 7);
+using System;
+using Inheritance;
 
-double area = rectangle.CalculateArea();
-    double perimeter = rectangle.CalculatePerimeter();
+var rec1 = new Rectangle(5.7, 3.4);
+var p = rec1.GetPerimeter();
 
- Console.WriteLine("Area of the rectangle: " + area);
-        Console.WriteLine("Perimeter of the rectangle: " + perimeter);
+var rec2 = new Rectangle(123.23, 34.3);
+var a = rec2.GetArea();
 
+var square1 = new Square(34.5);
+var sa = square1.GetArea();
 
- Square square = new Square(5);
-        double squareArea = square.CalculateArea();
-        double squarePerimeter = square.CalculatePerimeter();
-        Console.WriteLine("Area of the square: " + squareArea);
-        Console.WriteLine("Perimeter of the square: " + squarePerimeter);
+var circle1 = new Circle(34.5);
+var ca = circle1.GetArea();
 
+var sphere1 = new Sphere(34.5);
+var ssa = sphere1.GetArea();
+sphere1.PrintSphereInfo(34.5);
 
+var fileio = new FileIO();
+fileio.CreateFileWithInFolder();
 
-Circle circle = new Circle(10);
-        double circleArea = circle.CalculateArea();
-        double circlePerimeter = circle.CalculatePerimeter();
-        Console.WriteLine("Area of the circle: " + circleArea);
-        Console.WriteLine("Perimeter of the circle (circumference): " + circlePerimeter);
-    
-
-    Triangle triangle = new Triangle(3, 4, 5);
-    double triangleArea = triangle.CalculateArea();
-        double trianglePerimeter = triangle.CalculatePerimeter();
-          Console.WriteLine("Area of the triangle: " + triangleArea);
-        Console.WriteLine("Perimeter of the triangle: " + trianglePerimeter);
-
-
-
-        var fileio = new FileIO();
-        fileio.CreateFile();
+Console.WriteLine("abcdefghij");
