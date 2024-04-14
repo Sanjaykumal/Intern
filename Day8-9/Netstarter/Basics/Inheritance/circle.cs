@@ -1,19 +1,14 @@
-class Circle
+using system;
+namespace Inhertance;
+class Circle : IShape2D
 {
-    public double Radius { get; set; }
-
-    public Circle(double radius)
+    public Circle(double r)
     {
-        Radius = radius;
+        Radius = r;
     }
 
-    public double CalculateArea()
-    {
-        return Math.PI * Math.Pow(Radius, 2);
-    }
-
-    public double CalculatePerimeter()
-    {
-        return 2 * Math.PI * Radius;
-    }
+    protected double radius;
+    
+    public virtual double GetArea() => Math.PI*radius*radius;
+    public virtual double GetPerimeter => 2*Math.PI*radius;
 }

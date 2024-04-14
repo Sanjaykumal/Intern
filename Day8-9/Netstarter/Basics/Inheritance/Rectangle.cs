@@ -1,24 +1,25 @@
-//Write application to calculate area and perimeter of different 2D shapes
-
-class Rectangle
+//Write console application to calculate area and perimeter of different 2D shapes
+namespace Inhertance;
+class Rectangle : IShape2D
 {
-    public double Length { get; set; }
-    public double Width { get; set; }
+     //Default parameter constructor
+     //public rectangle()
+     {
 
-    public Rectangle(double length, double width)
+     }
+
+    //Parameterized constructor
+
+    public Rectangle(double l, double w)
     {
-        Length = length;
-        Width = width;
+        length = l;
+        width = w;
     }
 
-    public double CalculateArea()
-    {
-        return Length * Width;
-    }
+    double length;
+    double width;
 
-    public double CalculatePerimeter()
-    {
-        return 2 * (Length + Width);
-    }
+    public double GetArea() => length * width;
+    public double GetPerimeter() => 2 * (length + width);
 }
 
