@@ -38,26 +38,45 @@
 
 //a1.PrintDetails();
 
-using System;
-using Inheritance;
+
 
 var rec1 = new Rectangle(5.7, 3.4);
 var p = rec1.GetPerimeter();
 
 var rec2 = new Rectangle(123.23, 34.3);
 var a = rec2.GetArea();
+Console.Writeline("Rec1-Perimeter: " + p);
+Console.Writeline("Rec2-Arrea: " + a);
+
+
 
 var square1 = new Square(34.5);
 var sa = square1.GetArea();
+var sp = square1.GetPerimeter();
+Console.Writeline("Square-Perimeter: " + sp);
+console.Writeline("Square-Area: " + sa);
+
+
 
 var circle1 = new Circle(34.5);
 var ca = circle1.GetArea();
+var cp = circle1.GetPerimeter();
+Console.Writeline("Circle-Perimeter; " + cp);
+Console.Writeline("Circle-Area: " + ca);
+
+
+
+
+
+var t1 = new Triangle(1, 2, 3);
+double ta = t1.GetArea();
+double tp = t1.GetPerimeter();
+Console.Writeline("Triangle-Area:" + ta);
+Console.Writeline("Triangle_Perimeter:" + tp);
+
+
 
 var sphere1 = new Sphere(34.5);
 var ssa = sphere1.GetArea();
 sphere1.PrintSphereInfo(34.5);
 
-var fileio = new FileIO();
-fileio.CreateFileWithInFolder();
-
-Console.WriteLine("abcdefghij");

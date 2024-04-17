@@ -1,6 +1,4 @@
-using system;
-namespace Inhertance;
-class Circle : IShape2D
+class Circle
 {
     public Circle(double r)
     {
@@ -9,6 +7,6 @@ class Circle : IShape2D
 
     protected double radius;
     
-    public virtual double GetArea() => Math.PI*radius*radius;
-    public virtual double GetPerimeter => 2*Math.PI*radius;
+    public double GetArea() => Math.PI*radius*radius;
+    public double GetPerimeter => 2*Math.PI*radius;
 }
