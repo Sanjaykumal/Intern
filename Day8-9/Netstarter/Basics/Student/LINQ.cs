@@ -36,7 +36,7 @@ class LINQ
          var cubes = from age in ages select age*age*age where(x=>x%2==0);
         
         //find the students who lives in Dang and short the result by name
-        var students = from student in students select student orderby name where address like 'Dang';
+        var students = from student in students select student orderby name where address.contains "Dang";
     
     
     }
