@@ -4,7 +4,7 @@ namespace Inhertance;
 class Sphere: Circle
 {
     public Sphere(double radius)
-    :base(radius)
+    :base(radius);
 public double Area => 4 * Math.PI * radius * radius;
 
     public void PrintSphereInfo()
